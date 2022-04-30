@@ -1,7 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
 
 .container {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: auto;
     margin: 0 auto;
+}
+
+@media (max-width: 1460px) {
+    .container {
+        max-width: 1300px;
+    }
+}
+
+@media (max-width: 1325px) {
+    .container {
+        max-width: 1024px;
+    }
+}
+
+@media (max-width: 1040px) {
+    .container {
+        max-width: 880px;
+    }
+}
+
+@media (max-width: 900px) {
+    .container {
+        max-width: 640px;
+    }
+}
+
+@media (max-width: 414px) {
+    .container {
+        max-width: 370px;
+    }
 }

@@ -1,5 +1,6 @@
 .home {
     width: 100%;
+    min-height: calc(100vh);
     height: auto;
     background-color: #24252A;
     position: relative;
@@ -55,7 +56,7 @@
 
 /* Home Main Contet*/
 .content h1{
-    width: 800px;
+    width: 100%;
     color: #fff;
     font-size: 8rem;
     font-weight: 800;
@@ -79,7 +80,7 @@
 
 .products {
     width: 100%;
-    height: 1000px;
+    height: auto;
     padding-bottom: 80px;
 }
 
@@ -114,14 +115,15 @@
     height: auto;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     padding-top: 50px;
 }
 
 /* Card Products */
 .card {
-    width: 330px;
+    width: 310px;
     height: 370px;
-    margin: 10px 10px;
+    margin-bottom: 40px;
     background-color: #54555B;
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
@@ -178,4 +180,53 @@
 
 .footer p {
     color: #fff;
+}
+
+@media (max-width: 414px) {
+
+    .content h1 {
+        font-size: 4rem;
+    }
+
+    .content h1 span {
+        font-size: 1.6rem;
+        line-height: 1;
+        margin-left: 25px;
+    }
+
+    .productsItems {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 637px) {
+    .productsItems {
+        justify-content: center;
+    }
+
+    .content h1 {
+        font-size: 5rem;
+    }
+
+    .content h1 span {
+        font-size: 2.4rem;
+        line-height: 1;
+        margin-left: 25px;
+    }
+}
+
+@media (max-width: 414px) {
+    .productsItems {
+        justify-content: center;
+    }
+
+    .content h1 {
+        font-size: 4rem;
+    }
+
+    .content h1 span {
+        font-size: 1.6rem;
+        line-height: 1;
+        margin-left: 25px;
+    }
 }
